@@ -128,24 +128,11 @@
     <!-- 联系我们 -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>联系我们</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="qr-code">
-                        <img src="images/二维码.jpg" alt="微信二维码">
-                        <p>扫码添加作者微信</p>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="messageForm" onsubmit="sendMessage(event)">
-                        <div class="form-group">
-                            <input type="text" id="contact" name="contact" required placeholder="您的邮箱或手机号码">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" required placeholder="请输入您的留言"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">发送留言</button>
-                    </form>
+            <h2>联系作者</h2>
+            <div class="contact-info">
+                <div class="qr-code">
+                    <img src="images/二维码.jpg" alt="微信二维码">
+                    <p>扫码添加作者微信</p>
                 </div>
             </div>
         </div>
@@ -154,16 +141,25 @@
     <!-- 声明 -->
     <section class="disclaimer">
         <div class="container">
-            <h3>用户声明</h3>
-            <div class="disclaimer-content">
-                <p>本软件承诺：</p>
-                <ul>
-                    <li>不会收集、存储或窃取用户的个人数据</li>
-                    <li>不会擅自修改用户的文件内容</li>
-                    <li>所有文件处理均在用户本地完成</li>
-                    <li>仅供用户进行合法的文件格式转换使用</li>
-                </ul>
-                <p>免责声明：用户使用本软件进行任何违法活动造成的后果，与本软件开发者无关。</p>
+            <div class="disclaimer-card">
+                <div class="disclaimer-header">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>用户承诺与声明</h3>
+                </div>
+                <div class="disclaimer-content">
+                    <div class="promise-section">
+                        <h4>我们的承诺</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 不收集任何用户个人数据</li>
+                            <li><i class="fas fa-check"></i> 不修改用户文件内容</li>
+                            <li><i class="fas fa-check"></i> 所有处理均在本地完成</li>
+                        </ul>
+                    </div>
+                    <div class="legal-section">
+                        <h4>免责声明</h4>
+                        <p>本软件仅供用户进行合法的文件格式转换使用。用户使用本软件进行任何违法活动造成的后果，与本软件开发者无关。</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
