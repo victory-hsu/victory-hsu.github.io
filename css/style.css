@@ -270,3 +270,39 @@ body {
 .copy-btn:hover {
     color: #0056b3;
 }
+
+.download {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.download-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.download-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    flex: 1;
+    max-width: 300px;
+}
+
+.download-card i.fab {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.download-card h3 {
+    margin-bottom: 20px;
+}
+
+.download-card .btn {
+    margin-bottom: 15px;
+}
