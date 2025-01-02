@@ -131,8 +131,39 @@
             <h2>联系我们</h2>
             <div class="contact-grid">
                 <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> Email: 18300677868@163.com</p>
+                    <div class="qr-code">
+                        <img src="images/二维码.jpg" alt="微信二维码">
+                        <p>扫码添加作者微信</p>
+                    </div>
                 </div>
+                <div class="contact-form">
+                    <form id="messageForm" onsubmit="sendMessage(event)">
+                        <div class="form-group">
+                            <input type="text" id="contact" name="contact" required placeholder="您的邮箱或手机号码">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder="请输入您的留言"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">发送留言</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 声明 -->
+    <section class="disclaimer">
+        <div class="container">
+            <h3>用户声明</h3>
+            <div class="disclaimer-content">
+                <p>本软件承诺：</p>
+                <ul>
+                    <li>不会收集、存储或窃取用户的个人数据</li>
+                    <li>不会擅自修改用户的文件内容</li>
+                    <li>所有文件处理均在用户本地完成</li>
+                    <li>仅供用户进行合法的文件格式转换使用</li>
+                </ul>
+                <p>免责声明：用户使用本软件进行任何违法活动造成的后果，与本软件开发者无关。</p>
             </div>
         </div>
     </section>
