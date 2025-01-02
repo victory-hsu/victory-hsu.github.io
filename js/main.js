@@ -23,3 +23,11 @@ window.addEventListener('scroll', function() {
         navbar.style.backgroundColor = '#ffffff';
     }
 });
+
+function copyCode(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        alert('提取码已复制到剪贴板！');
+    }).catch(err => {
+        console.error('复制失败：', err);
+    });
+}

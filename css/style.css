@@ -239,3 +239,34 @@ body {
         margin-top: 15px;
     }
 }
+
+.download-info {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.extract-code {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.extract-code code {
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.copy-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.copy-btn:hover {
+    color: #0056b3;
+}
