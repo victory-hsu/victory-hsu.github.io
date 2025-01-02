@@ -508,3 +508,41 @@ body {
     color: #666;
     font-size: 1.1rem;
 }
+
+/* 页脚样式 */
+.footer {
+    background: #2c3e50;
+    padding: 40px 0;
+    color: white;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.logo-text {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.copyright p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 0;
+    }
+    
+    .logo-text {
+        font-size: 1.2rem;
+    }
+}
