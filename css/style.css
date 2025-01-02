@@ -511,13 +511,16 @@ body {
 
 /* 页脚样式 */
 .footer {
-    background: #2c3e50;
-    padding: 40px 0;
-    color: white;
+    background: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
 }
 
-.footer-content {
-    text-align: center;
+.footer-content p {
+    color: #666;
+    margin: 0;
+    font-size: 0.9rem;
 }
 
 .logo-text {
