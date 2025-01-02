@@ -177,118 +177,161 @@ body {
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
 }
 
-.contact-card {
-    display: inline-flex;
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.contact-card {
     background: white;
-    padding: 20px 40px;
-    border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 30px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    gap: 20px;
     transition: transform 0.3s ease;
 }
 
 .contact-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 
-.contact-card i {
-    font-size: 24px;
-    color: #4a90e2;
-    margin-right: 15px;
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon i {
+    font-size: 28px;
+    color: white;
 }
 
 .contact-card a {
     color: #2c3e50;
     text-decoration: none;
     font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .contact-card a:hover {
     color: #4a90e2;
 }
 
-/* 声明样式 */
-.disclaimer {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+/* 安全承诺样式 */
+.security {
+    padding: 100px 0;
+    background: #ffffff;
 }
 
-.disclaimer-wrapper {
-    max-width: 1200px;
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.section-header .subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.security-container {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.promise-grid {
+.security-features {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 50px;
 }
 
-.promise-item {
+.feature-item {
     background: white;
-    padding: 40px 30px;
-    border-radius: 20px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
 }
 
-.promise-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+.feature-item:hover {
+    transform: translateX(10px);
 }
 
-.promise-icon {
-    width: 80px;
-    height: 80px;
-    background: #f0f7ff;
-    border-radius: 50%;
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #f0f7ff 0%, #e3f0ff 100%);
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 20px;
+    flex-shrink: 0;
 }
 
-.promise-icon i {
-    font-size: 32px;
+.feature-icon i {
+    font-size: 30px;
     color: #4a90e2;
 }
 
-.promise-item h3 {
+.feature-content h3 {
     color: #2c3e50;
     font-size: 1.3rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-.promise-item p {
+.feature-content p {
     color: #666;
     line-height: 1.6;
     margin: 0;
 }
 
-.legal-notice {
-    margin-top: 50px;
+.security-disclaimer {
+    margin-top: 60px;
 }
 
-.notice-content {
+.disclaimer-box {
     background: #fff8f8;
     border-radius: 15px;
-    padding: 25px;
+    overflow: hidden;
+}
+
+.disclaimer-header {
+    background: #ff6b6b;
+    color: white;
+    padding: 15px 25px;
     display: flex;
     align-items: center;
-    gap: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    gap: 10px;
 }
 
-.notice-content i {
-    font-size: 24px;
-    color: #e74c3c;
-    flex-shrink: 0;
+.disclaimer-header i {
+    font-size: 20px;
 }
 
-.notice-content p {
+.disclaimer-header span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.disclaimer-box p {
+    padding: 25px;
     margin: 0;
     color: #666;
     line-height: 1.6;
