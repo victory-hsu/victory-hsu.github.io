@@ -173,44 +173,125 @@ body {
 
 /* 联系我们 */
 .contact {
-    padding: 40px 0;
-    background: #f8f9fa;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
 }
 
-.contact-info {
-    display: flex;
-    justify-content: center;
+.contact-card {
+    display: inline-flex;
     align-items: center;
-    margin-top: 30px;
-}
-
-.qr-code {
-    text-align: center;
     background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    padding: 20px 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
 }
 
-.qr-code img {
-    width: 150px;
-    height: 150px;
-    border-radius: 8px;
-    margin-bottom: 10px;
+.contact-card:hover {
+    transform: translateY(-3px);
 }
 
-.qr-code p {
+.contact-card i {
+    font-size: 24px;
+    color: #4a90e2;
+    margin-right: 15px;
+}
+
+.contact-card a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.contact-card a:hover {
+    color: #4a90e2;
+}
+
+/* 声明样式 */
+.disclaimer {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.disclaimer-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.promise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.promise-item {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.promise-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.promise-icon {
+    width: 80px;
+    height: 80px;
+    background: #f0f7ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.promise-icon i {
+    font-size: 32px;
+    color: #4a90e2;
+}
+
+.promise-item h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.promise-item p {
     color: #666;
-    font-size: 14px;
+    line-height: 1.6;
     margin: 0;
 }
 
-/* 页脚 */
-.footer {
-    background-color: var(--secondary-color);
-    color: var(--white);
-    padding: 20px 0;
-    text-align: center;
+.legal-notice {
+    margin-top: 50px;
+}
+
+.notice-content {
+    background: #fff8f8;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.notice-content i {
+    font-size: 24px;
+    color: #e74c3c;
+    flex-shrink: 0;
+}
+
+.notice-content p {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
 }
 
 /* 响应式设计 */
@@ -242,6 +323,28 @@ body {
     .btn-secondary {
         margin-left: 0;
         margin-top: 15px;
+    }
+
+    .promise-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-card {
+        padding: 15px 25px;
+    }
+    
+    .contact-card a {
+        font-size: 1rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .notice-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
     }
 }
 
@@ -346,107 +449,19 @@ body {
     resize: vertical;
 }
 
-/* 声明样式 */
-.disclaimer {
-    padding: 60px 0;
-    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
-}
-
-.disclaimer-card {
-    max-width: 800px;
-    margin: 0 auto;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    overflow: hidden;
-}
-
-.disclaimer-header {
-    background: #4a90e2;
-    color: white;
-    padding: 20px;
+/* 通用部分 */
+.section-header {
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    margin-bottom: 50px;
 }
 
-.disclaimer-header i {
-    font-size: 24px;
-}
-
-.disclaimer-header h3 {
-    margin: 0;
-    font-size: 20px;
-}
-
-.disclaimer-content {
-    padding: 30px;
-}
-
-.promise-section, .legal-section {
-    margin-bottom: 25px;
-}
-
-.promise-section h4, .legal-section h4 {
+.section-header h2 {
+    font-size: 2.5rem;
     color: #2c3e50;
     margin-bottom: 15px;
-    font-size: 18px;
-    position: relative;
-    padding-left: 15px;
 }
 
-.promise-section h4:before, .legal-section h4:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 4px;
-    height: 18px;
-    background: #4a90e2;
-    border-radius: 2px;
-}
-
-.promise-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.promise-section li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
+.section-header .subtitle {
     color: #666;
-}
-
-.promise-section li i {
-    color: #2ecc71;
-    margin-right: 10px;
-    font-size: 14px;
-}
-
-.legal-section p {
-    color: #666;
-    line-height: 1.6;
-    margin: 0;
-    padding: 15px;
-    background: #f8f9fa;
-    border-radius: 8px;
-}
-
-@media (max-width: 768px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .disclaimer-card {
-        margin: 0 15px;
-    }
-    
-    .disclaimer-content {
-        padding: 20px;
-    }
+    font-size: 1.1rem;
 }
