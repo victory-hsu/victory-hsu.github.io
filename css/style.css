@@ -633,3 +633,23 @@ body {
         padding-bottom: 45%; /* 调整视频高度比例 */
     }
 }
+
+.footer-links {
+    margin-top: 15px;
+}
+
+.links-title {
+    color: #666;
+    margin-right: 10px;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #333;
+    text-decoration: underline;
+}
